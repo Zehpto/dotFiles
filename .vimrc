@@ -14,7 +14,7 @@ call vundle#rc()
 Plugin 'VundleVim/Vundle.vim'                   "Vundles gotta manage Vundle
 Plugin 'altercation/vim-colors-solarized'       "A pretty awesome colorscheme
 Plugin 'bling/vim-airline'                      "A pretty awesome utility line
-Plugin 'scrooloose/syntastic'                   "Check my syntax before compiling
+"Plugin 'scrooloose/syntastic'                   "Check my syntax before compiling
 "Plugin 'Valloric/YouCompleteMe'                 "Complete everything I type
 Plugin 'terryma/vim-multiple-cursors'           "Sublime Text styled multiple cursors
 Plugin 'kien/ctrlp.vim'                         "Fuzzy logic search for files
@@ -86,7 +86,7 @@ let g:airline_theme = 'badwolf'
 "jellybeans = ^ but with some color
 "
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#syntastic#enabled = 1      "I love me my Syntastic
+"let g:airline#extensions#syntastic#enabled = 1      "I love me my Syntastic
 let g:airline#extensions#fugitive#enabled = 1
 
 "let g:airline_powerline_fonts = 1
@@ -99,14 +99,14 @@ let g:airline#extensions#fugitive#enabled = 1
 """"""""""""""""""""""""""""""""
 "Recommended Syntastic settings"
 """"""""""""""""""""""""""""""""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 """""""""""""""""""
 "NERDTree Settings"
